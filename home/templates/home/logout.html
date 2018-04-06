@@ -1,4 +1,4 @@
-{% extends home/home_layout.html %}
+{% extends 'home/home_layout.html' %}
 {% block body %}
 <div class="row">
 	<hr>
@@ -9,9 +9,7 @@
 </div>
 <div class="row">
 	<form method="POST">
-		{% csrf_token %}
-		{{ form.as_p }}
-		<button type="submit">Login</button>
+		You have logged out!
 	</form>
 </div>
 {% endblock %}
