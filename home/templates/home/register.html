@@ -1,0 +1,17 @@
+{% extends 'home/home_layout.html' %}
+{% block content %}
+<div class="row">
+	<hr>
+	<div class="col-md-12">
+		REGISTER AN ACCOUNT TO PSU 2015 PORTAL
+	</div>	
+	<hr>
+</div>
+<div class="container">
+	<form method="post">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<button type="submit">Register</button>
+	</form>
+</div>
+{% endblock %}
