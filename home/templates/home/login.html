@@ -1,5 +1,5 @@
 {% extends 'home/home_layout.html' %}
-{% block body %}
+{% block content %}
 <div class="row">
 	<hr>
 	<div class="col-md-12">
@@ -7,8 +7,8 @@
 	</div>	
 	<hr>
 </div>
-<div class="row">
-	<form method="POST">
+<div class="container">
+	<form method="post">
 		{% csrf_token %}
 		{{ form.as_p }}
 		<button type="submit">Login</button>
