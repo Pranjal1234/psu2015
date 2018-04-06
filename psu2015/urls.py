@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from .forms import UserRegistrationForm
 
 urlpatterns = [
 	url(r'^$', include('home.urls')),
